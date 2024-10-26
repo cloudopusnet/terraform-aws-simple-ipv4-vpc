@@ -42,3 +42,15 @@ variable "enable_internet_gateway" {
   description = "Determines whether the VPC has an Internet Gateway associated"
   default     = true
 }
+
+variable "context" {
+  nullable = true
+  type = object({
+    context = string
+    tags    = map(string)
+  })
+  default = {
+    context = null
+    tags    = {}
+  }
+}
