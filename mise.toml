@@ -1,0 +1,43 @@
+[tools]
+terraform      = "1.9.8"
+pre-commit     = "4.2.0"
+terraform-docs = "0.20.0"
+trivy          = "0.61.1"
+tflint         = "0.56.0"
+gitleaks       = "8.24.3"
+
+[tasks]
+[tasks.fmt]
+run = "terraform fmt -recursive"
+
+[tasks.examples-defaults]
+dir = "examples/defaults"
+run = [
+  "terraform init",
+  "terraform validate",
+  "terraform plan -out plan",
+  "terraform apply plan"
+]
+
+[tasks.examples-defaults-destroy]
+dir = "examples/defaults"
+run = [
+  "terraform init",
+  "terraform destroy"
+]
+
+[tasks.examples-private-subnets]
+dir = "examples/private-subnets"
+run = [
+  "terraform init",
+  "terraform validate",
+  "terraform plan -out plan",
+  "terraform apply plan"
+]
+
+[tasks.examples-private-subnets-destroy]
+dir = "examples/private-subnets"
+run = [
+  "terraform init",
+  "terraform destroy"
+]
