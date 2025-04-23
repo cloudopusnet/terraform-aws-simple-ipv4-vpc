@@ -41,3 +41,9 @@ run = [
   "terraform init",
   "terraform destroy"
 ]
+
+[tasks.test]
+run = [
+  "terraform init",
+  "terraform test"
+]
