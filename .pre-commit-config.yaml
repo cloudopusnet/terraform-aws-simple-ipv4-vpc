@@ -15,7 +15,7 @@ repos:
     files: \.tf$
   - id: tflint
     name: tflint
-    entry: bash -c 'tflint'
+    entry: bash -c 'tflint --init && tflint'
     language: system
     files: \.tf$
   - id: trivy

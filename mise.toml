@@ -47,3 +47,6 @@ run = [
   "terraform init",
   "terraform test"
 ]
+
+[tasks.pre-commit]
+run = "pre-commit run --all-files --show-diff-on-failure"

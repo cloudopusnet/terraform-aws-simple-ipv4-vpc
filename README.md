@@ -1,5 +1,8 @@
 # terraform-aws-simple-ipv4-vpc
 
+Simple AWS VPC for test environments and prototype workloads
+
+# Terraform Docs
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -60,3 +63,8 @@ No modules.
 | <a name="output_vpc_arn"></a> [vpc\_arn](#output\_vpc\_arn) | VPC ARN |
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | VPC ID |
 <!-- END_TF_DOCS -->
+
+# Development workflow
+## Setup
+- Environment setup is done through [mise](https://mise.jdx.dev)
+- All the build dependencies are defined in the `mise.toml` file
