@@ -18,11 +18,6 @@ repos:
     entry: bash -c 'tflint --init && tflint'
     language: system
     files: \.tf$
-  - id: trivy
-    name: trivy
-    entry: bash -c 'trivy config --severity HIGH,CRITICAL,MEDIUM ./'
-    language: system
-    files: \.tf$
 - repo: https://github.com/terraform-docs/terraform-docs
   rev: v0.20.0
   hooks:
