@@ -50,3 +50,6 @@ run = [
 
 [tasks.pre-commit]
 run = "pre-commit run --all-files --show-diff-on-failure"
+
+[tasks.trivy]
+run = "trivy fs --scanners misconfig,secret,vuln ."
