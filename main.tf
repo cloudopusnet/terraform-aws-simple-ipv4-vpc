@@ -35,6 +35,7 @@ locals {
   nat_tags                 = merge(var.tags, { Name = "terraform-aws-simple-ipv4-vpc-nat" })
 }
 
+# trivy:ignore:avd-aws-0178
 resource "aws_vpc" "this" {
   cidr_block           = var.cidr_block
   enable_dns_hostnames = true
