@@ -10,13 +10,13 @@ Simple AWS VPC for test environments and prototype workloads
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.8 |
 | <a name="requirement_assert"></a> [assert](#requirement\_assert) | >=0.15.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.95 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.97 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.95 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.97 |
 
 ## Modules
 
